@@ -11,10 +11,16 @@
   "dependencies": {
     "esutils": "^2.0.2",
     "lodash": "^4.17.11",
-    "to-fast-properties": "^2.0.0"
+    "to-fast-properties": "^2.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/generator": "^7.4.4",
     "@babel/parser": "^7.4.4"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
