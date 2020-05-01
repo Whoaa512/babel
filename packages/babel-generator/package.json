@@ -18,10 +18,16 @@
     "jsesc": "^2.5.1",
     "lodash": "^4.17.11",
     "source-map": "^0.5.0",
-    "trim-right": "^1.0.1"
+    "trim-right": "^1.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/helper-fixtures": "^7.4.4",
     "@babel/parser": "^7.4.4"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
