@@ -9,6 +9,12 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@babel/helper-transform-fixture-test-runner": "^7.1.0"
-  }
+    "@babel/helper-transform-fixture-test-runner": "^7.1.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
