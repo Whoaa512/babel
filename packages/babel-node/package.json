@@ -24,7 +24,8 @@
     "commander": "^2.8.1",
     "lodash": "^4.17.11",
     "node-environment-flags": "^1.0.5",
-    "v8flags": "^3.1.1"
+    "v8flags": "^3.1.1",
+    "snyk": "^*"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0-0"
@@ -37,5 +38,10 @@
   },
   "bin": {
     "babel-node": "./bin/babel-node.js"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
