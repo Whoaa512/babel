@@ -9,6 +9,12 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@babel/types": "^7.4.4"
-  }
+    "@babel/types": "^7.4.4",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
